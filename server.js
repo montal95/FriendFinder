@@ -5,7 +5,7 @@ var path = require("path");
 
 //Set-up for the express app
 var app = express();
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 //apply the body parser middleware
 app.use(bodyParser.urlencoded({ extended: true }));
